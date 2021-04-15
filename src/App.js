@@ -10,10 +10,16 @@ class App extends Component{
         <Typography variant="h3">
           Formulário Cadastro
         </Typography >
-        <FormularioCadastro />
+        <FormularioCadastro aoEnviar={
+          aoEnviarForm
+        }/>
       </Container>
     )
   }
+}
+
+function aoEnviarForm(dados){
+  console.log(dados)
 }
 
 export default App
